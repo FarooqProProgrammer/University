@@ -14,6 +14,8 @@ class Encryp:
                 if char in self.dictionary:
                     index = self.dictionary.index(char)
                     encrypted_index = (index + 3) % 26
+                    print(index)
+                    print(encrypted_index)
                     self.encrypted_text += self.dictionary[encrypted_index]
                 else:
                     self.encrypted_text += char
